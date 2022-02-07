@@ -12,7 +12,7 @@ for j in range (len(label)):
     for i in range (len(label[j]["labels"])):
 
         if 'box2d' in label[j]["labels"][i].keys() and file_name in label[j]['name']:
-            print(label[j]["labels"][i]['category'],end=' ')
+            print(label[j]["labels"][i],end=' ')
             X1=label[j]["labels"][i]["box2d"]["x1"]
             Y1=label[j]["labels"][i]["box2d"]["y1"]
             X2=label[j]["labels"][i]["box2d"]["x2"]
