@@ -44,7 +44,7 @@ Object Detection 을 활용한 프로젝트
 2022-01-24
 -------------
 깃허브와 파이참을 이용해, 파일소스를 깃허브에 올리는 방법을 습득 및 계정 생성.
-이미지 인식을 하기위해 필요한 json 파일 해석 알고리즘을 조금 배워봄,
+이미지 인식을 하기위해 필요한 json 파일 해석 알고리즘을 배워봄,
 +예제 이미지 다운
 
 2022-01-26
@@ -52,6 +52,8 @@ Object Detection 을 활용한 프로젝트
 24일보다 심화된 해석 알고리즘을 통해, key값과 리스트의 값을 출력함.
 또한, 차와 모터등 여러 정보값이 들어있는 json 파일을 기초로,
 사각형을 그릴수 있는 알고리즘을 만들어 시각화함.
+![noname01](https://user-images.githubusercontent.com/98321404/153199877-33cbebf2-a660-479d-b922-dab9c8070ba1.jpg)
+
 
 
 
@@ -61,5 +63,5 @@ Object Detection 을 활용한 프로젝트
 앞서 사각형을 그린 부분을 잘라서 다른 jpg파일로 저장함.
 이때, os.listdir을 통해 이미지 파일들을 불러오고, os.path.exists를 통하여 파일 유뮤를,
 cv2.imwrite를 통해 이미지 형식으로 저장하였다.
-
+![noname02](https://user-images.githubusercontent.com/98321404/153199888-9ec72d85-75f2-49a6-aee1-6b5fefc75b4e.jpg)
 
