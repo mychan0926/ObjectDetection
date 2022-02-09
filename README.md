@@ -54,19 +54,19 @@ PyCharm
 
 #### 2022-01-24
 
-깃허브와 파이참을 이용해, 파일소스를 깃허브에 올리는 방법을 습득 및 계정 생성.
-이미지 인식을 하기위해 필요한 json 파일 해석 알고리즘을 배워보았다.
-json파일 내에는 이미지 안의 물체들에 대한 정보가 배열과 사전으로 정리되어있어, 그 물체에 대한 정보를 불러오는 방법을 공부했다.
-cv2를 이용해, cv2내의 cv2.imshow() 함수를 통해, 경로를 넣어, 이미지를 출력시킬수 있는 알고리즘을 제작하였다.
-+예제 이미지 다운
+* 깃허브와 파이참을 이용해, 파일소스를 깃허브에 올리는 방법을 습득 및 계정 생성.
+* 이미지 인식을 하기위해 필요한 json 파일 해석 알고리즘을 배워보았다.
+* json파일 내에는 이미지 안의 물체들에 대한 정보가 배열과 사전으로 정리되어있어, 그 물체에 대한 정보를 불러오는 방법을 공부했다.
+* cv2를 이용해, cv2내의 cv2.imshow() 함수를 통해, 경로를 넣어, 이미지를 출력시킬수 있는 알고리즘을 제작하였다.
+* +예제 이미지 다운
 
 #### 2022-01-26
 
-24일보다 심화된 해석 알고리즘을 통해, key값과 리스트의 값을 출력했다.
-또한, 차와 모터등 여러 정보값이 들어있는 json 파일을 기초로,
-사각형을 그릴수 있는 알고리즘을 만들었다.
-사각형을 그릴때에도, cv2를 이용하였으며, 내부함수중 cv2.rectangle() 함수를 통해, 사각형을, 
-cv2.putText 함수를 이용해 글자를 출력하였다.
+* 24일보다 심화된 해석 알고리즘을 통해, key값과 리스트의 값을 출력했다.
+* 또한, 차와 모터등 여러 정보값이 들어있는 json 파일을 기초로,
+* 사각형을 그릴수 있는 알고리즘을 만들었다.
+* 사각형을 그릴때에도, cv2를 이용하였으며, 내부함수중 cv2.rectangle() 함수를 통해, 사각형을, 
+* cv2.putText 함수를 이용해 글자를 출력하였다.
 
 
    
@@ -75,9 +75,9 @@ cv2.putText 함수를 이용해 글자를 출력하였다.
 
 #### 2022-02-07
 
-앞서 사각형을 그린 부분을 image[y1:y2,x1:x2]형식으로 잘라서 다른 jpg파일로 저장하였다.
-이때, os.listdir을 통해 이미지 파일들을 불러오고, os.path.exists를 통하여 파일 유뮤를,
-cv2.imwrite를 통해 이미지 형식으로 저장하였다.   
+* 앞서 사각형을 그린 부분을 image[y1:y2,x1:x2]형식으로 잘라서 다른 jpg파일로 저장하였다.
+* 이때, os.listdir을 통해 이미지 파일들을 불러오고, os.path.exists를 통하여 파일 유뮤를,
+* cv2.imwrite를 통해 이미지 형식으로 저장하였다.   
 
    
 ![noname02](https://user-images.githubusercontent.com/98321404/153199888-9ec72d85-75f2-49a6-aee1-6b5fefc75b4e.jpg)
@@ -85,12 +85,13 @@ cv2.imwrite를 통해 이미지 형식으로 저장하였다.
 
 #### 2022-02-09
 
-tensorflow와 matplotlib를 설치한후, tensorflow의 train_dataset.take(1)을 이용해 큰덩어리로 가져온후,
-for images, labels in data: 코드로 분해한후, 
-(matplotlib.pyplot)(약칭 plt)의 plt.figure()로 그래프를 지정,
-plt.title('data')로 타이틀 이름,
-plt.subplot(5,5,i+1)으로 그래프를 5*5로 쪼개서 i+1번에 삽입 한 후,
-plt.imshow(images[i].numpy().astype('uint8'))를 통해 정수형으로 변환하여,(plt에서는 실수형의 픽셀 색값은 오류가 뜸)
-plt.title(train_dataset.class_names[np.argmax(labels[i])])로 이름을 지정해준후 출력하였다. (plt.axis('off')로 그래프 표기 삭제)   
+* tensorflow와 matplotlib를 설치한후, tensorflow의 train_dataset.take(1)을 이용해 큰덩어리로 가져온후,
+* for images, labels in data: 코드로 분해한후, 
+* (matplotlib.pyplot)(약칭 plt)의 plt.figure()로 그래프를 지정,
+* plt.title('data')로 타이틀 이름,
+* plt.subplot(5,5,i+1)으로 그래프를 5*5로 쪼개서 i+1번에 삽입 한 후,
+* plt.imshow(images[i].numpy().astype('uint8'))를 통해 정수형으로 변환하여,(plt에서는 실수형의 픽셀 색값은 오류가 뜸)
+* plt.title(train_dataset.class_names[np.argmax(labels[i])])로 이름을 지정해준후 출력하였다. (plt.axis('off')로 그래프 표기 삭제)   
+* 그 결과는 아래와 같이, 자료들을 나누어서 한번에 볼 수 있게 되었다.
    
 ![캡처](https://user-images.githubusercontent.com/98321404/153203840-dc463da3-f1e1-40a1-b680-77efc5b8ccd8.PNG)
