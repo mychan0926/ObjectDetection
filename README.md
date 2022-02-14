@@ -95,3 +95,19 @@ PyCharm
 * 그 결과는 아래와 같이, 자료들을 나누어서 한번에 볼 수 있게 되었다.
    
 ![캡처](https://user-images.githubusercontent.com/98321404/153203840-dc463da3-f1e1-40a1-b680-77efc5b8ccd8.PNG)
+
+가상환경 설정
+데이터 수집 (BDD100K)
+https://bair.berkeley.edu/blog/2018/05/30/bdd/
+데이터 학습
+프로그램 제작 (시뮬레이션 환경 - Carla)
+
+anaconda prompt 실행
+conda create -n rod-env python=3.6
+conda activate rod-env
+pip install opencv-python==4.5.5.62
+anaconda prompt 실행
+conda activate rod-env
+pip install tensorflow==2.6.2
+pip install matplotlib==3.3.4
+
