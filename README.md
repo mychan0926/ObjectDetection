@@ -96,6 +96,13 @@ PyCharm
    
 ![캡처](https://user-images.githubusercontent.com/98321404/153203840-dc463da3-f1e1-40a1-b680-77efc5b8ccd8.PNG)
 
+
+#### 2022-02-14
+
+* 텐서플로우에 내장되어있는, keras 함수를 통하여, 이미 만들어진 가중치등을 적용시킴.
+* 인공신경망 합성곱계층과, 완전연결 신경망을 통하여, 데이터를 9개로 압축시킨후, 모델을 저장시킴.
+* 
+
 가상환경 설정
 데이터 수집 (BDD100K)
 https://bair.berkeley.edu/blog/2018/05/30/bdd/
