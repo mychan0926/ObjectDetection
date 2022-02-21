@@ -108,9 +108,18 @@ PyCharm
 * 그러나, 아직 학습이 완료되지 않은 상태라, 나오는 출력값은 아무런 예측이 되지 않는 상태임. (사실상 아무것도 배우지 않은사람과 같은 상태)
 * resize한 이미지를 텐서플로우의 predict로 판단.
 
+#### 2022-02-21
+* model.fix를 통해 모델을 학습시킴.
+* ![image](https://user-images.githubusercontent.com/98321404/154954623-bae099ff-08f5-4823-83e7-ea651f9dd1e3.png)
+* ![image](https://user-images.githubusercontent.com/98321404/154954827-da5ab75b-f235-438c-96a2-4c578daa56c8.png)
+* ![image](https://user-images.githubusercontent.com/98321404/154955202-5edfa5aa-7289-454b-8b10-779c6da60945.png)
+이 값으로 보아, leanding data는 이차함수 그래프에서 좌우로 이동하는 값 같은 기능을 하는것이라 추측해봄.
+
+
 가상환경 설정
 데이터 수집 (BDD100K)
 https://bair.berkeley.edu/blog/2018/05/30/bdd/
+
 데이터 학습
 프로그램 제작 (시뮬레이션 환경 - Carla)
 
