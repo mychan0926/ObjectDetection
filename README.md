@@ -123,3 +123,5 @@ conda activate rod-env
 pip install tensorflow==2.6.2
 pip install matplotlib==3.3.4
 
+mnist라는 글자 인식 데이터 베이스도 존재.
+지금은 이미지넷이라는 이미지 데이터 베이스를 사용.
