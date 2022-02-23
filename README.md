@@ -124,11 +124,19 @@ https://bair.berkeley.edu/blog/2018/05/30/bdd/
 프로그램 제작 (시뮬레이션 환경 - Carla)
 
 anaconda prompt 실행
+
 conda create -n rod-env python=3.6
+
 conda activate rod-env
+
 pip install opencv-python==4.5.5.62
+
 anaconda prompt 실행
+
 conda activate rod-env
+
 pip install tensorflow==2.6.2
+
 pip install matplotlib==3.3.4
+
 
