@@ -108,6 +108,15 @@ PyCharm
 * 그러나, 아직 학습이 완료되지 않은 상태라, 나오는 출력값은 아무런 예측이 되지 않는 상태임. (사실상 아무것도 배우지 않은사람과 같은 상태)
 * resize한 이미지를 텐서플로우의 predict로 판단.
 
+#### 2022-02-23
+* 데이터의 로그를 남긴후, 그 로그를 아나콘다를 통하여 시각화함.
+* (learning_rate=0.0005)
+* ![image](https://user-images.githubusercontent.com/98321404/155313664-fde2757f-2a29-48f6-a909-277d70f8cb09.png)
+* (learning_rate=0.01)
+* ![image](https://user-images.githubusercontent.com/98321404/155314587-c57c4e10-1016-4b9a-a918-5c1689ffc085.png)
+* (learning_rate=0.001)
+* ![image](https://user-images.githubusercontent.com/98321404/155315298-68104907-8b37-4900-b630-639b234e42d8.png)
+
 가상환경 설정
 데이터 수집 (BDD100K)
 https://bair.berkeley.edu/blog/2018/05/30/bdd/
@@ -115,11 +124,19 @@ https://bair.berkeley.edu/blog/2018/05/30/bdd/
 프로그램 제작 (시뮬레이션 환경 - Carla)
 
 anaconda prompt 실행
+
 conda create -n rod-env python=3.6
+
 conda activate rod-env
+
 pip install opencv-python==4.5.5.62
+
 anaconda prompt 실행
+
 conda activate rod-env
+
 pip install tensorflow==2.6.2
+
 pip install matplotlib==3.3.4
+
 
