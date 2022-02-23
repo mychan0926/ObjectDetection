@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 file_name=input()
 data_name=input()
-model=tf.keras.models.load_model("../models/classification_model_trained.h5")
+model=tf.keras.models.load_model("../models/savemodel.h5")
 class_names=['bike', 'bus', 'car', 'motor', 'person', 'rider', 'traffic light', 'traffic sign', 'truck']
 
 image=cv2.imread("../classification_data/"+file_name+"/"+data_name)

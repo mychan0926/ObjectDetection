@@ -7,7 +7,7 @@ train_dataset=tf.keras.preprocessing.image_dataset_from_directory(
     #batch_size=1 덩어리를 묶는 기준 (1개씩 묶기)
 )
 
-model=tf.keras.models.load_model("../models/classification_model_trained.h5")
+model=tf.keras.models.load_model("../models/savemodel.h5")
 
 
 learning_rate=0.0001
@@ -19,4 +19,4 @@ model.compile(
 model.fit(train_dataset,epochs=80) #모델 학습, (데이터셋, 횟수)
 if not os.path.exists("../models"): #폴더가 그위치에 없다면,
     os.mkdir("../models") #만들기
-model.save("../models/classification_model_trained.h5")
+model.save("../models/savemodel.h5")
