@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QGridLayout
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGridLayout,QGroupBox
 import sys
 
 class ClassificationAI(QWidget):
@@ -9,13 +9,15 @@ class ClassificationAI(QWidget):
         self.button1=QPushButton('버튼 1')
         self.button2 = QPushButton('버튼 2')
 
+        self.group_box = QGroupBox("그룹")
 
-        self.hbox_layout=QVBoxLayout()
+        self.hbox_layout=QHBoxLayout()
         self.hbox_layout.addWidget(self.button1)
         self.hbox_layout.addWidget(self.button2)
 
+        self.group_box.setLayout(self.hbox_layout)
         self.main_layout=QGridLayout()
-        self.main_layout.addLayout(self.hbox_layout,0,0,1,1)
+        self.main_layout.addWidget(self.group_box,0,0,1,1)
 
         self.setLayout(self.main_layout)
 
