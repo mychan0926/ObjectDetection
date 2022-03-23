@@ -117,6 +117,15 @@ PyCharm
 * (learning_rate=0.001)
 * ![image](https://user-images.githubusercontent.com/98321404/155315298-68104907-8b37-4900-b630-639b234e42d8.png)
 
+#### 2022-03-02
+* GUI 구현 실험을 함.
+* ![image](https://user-images.githubusercontent.com/98321404/159701745-c41db2f3-184c-457f-9436-d4a51970ced9.png)
+* PyQt5.QtWidgets을 이용해 구현.
+#### 2022-03-14
+* GUI 구현을 완료함.
+* 
+
+
 가상환경 설정
 데이터 수집 (BDD100K)
 https://bair.berkeley.edu/blog/2018/05/30/bdd/
