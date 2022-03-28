@@ -149,7 +149,7 @@ conda create -n rod-env python=3.6
 conda activate rod-env
 
 pip install opencv-python==4.5.5.62
-
+---------------------------
 anaconda prompt 실행
 
 conda activate rod-env
@@ -157,5 +157,8 @@ conda activate rod-env
 pip install tensorflow==2.6.2
 
 pip install matplotlib==3.3.4
+-----------------------------
+pip install pyqt5==5.15.6
+-----------------------------
 
 
