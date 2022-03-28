@@ -126,6 +126,8 @@ PyCharm
 * GUI 구현을 완료함.
 * 함수를 이용해, 버튼에 기능을 넣어서 실행까지 가능해짐.
 * 그 결과, 아래 사진과 같이, 퍼센트로 표기 가능해짐.
+
+
 ![image](https://user-images.githubusercontent.com/98321404/160390475-e2cc07c4-8105-4959-ab50-466aaa8c38d8.png)
 
 
