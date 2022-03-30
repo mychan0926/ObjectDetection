@@ -109,6 +109,7 @@ PyCharm
 
 #### 2022-02-23
 * 데이터의 로그를 남긴후, 그 로그를 아나콘다를 통하여 시각화함.
+* 
 * (learning_rate=0.0005)
 * ![image](https://user-images.githubusercontent.com/98321404/155313664-fde2757f-2a29-48f6-a909-277d70f8cb09.png)
 * (learning_rate=0.01)
@@ -132,9 +133,25 @@ PyCharm
 
 
 #### 2022-03-28
-*
+
+-------------------------------
+retinanet : https://yhu0409.tistory.com/2
+imagemap : https://csm-kr.tistory.com/11
 
 
+
+
+
+
+
+
+
+
+
+
+
+r
+--------------------------------
 
 가상환경 설정
 데이터 수집 (BDD100K)
