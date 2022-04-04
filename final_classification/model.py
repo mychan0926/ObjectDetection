@@ -40,7 +40,7 @@ class Model:
             optimizer=tf.keras.optimizers.RMSprop(learning_rate=self.learning_rate),  # (경사 하강법)줄이는 방법
             metrics=['accuracy']  # 확인하고 싶은 통계값을 보고 싶을 때 쓸 수 있는 함수. (이 코드에선 정확도를 알고 싶어, 정확도로 적음.)
         )
-        self.model.fit(self.train_dataset, epochs=5)  # 모델 학습, (데이터셋, 횟수)
+        self.model.fit(self.train_dataset, epochs=20)  # 모델 학습, (데이터셋, 횟수)
     #예측
     def predict(self, path):
         image = cv2.imread(path)
@@ -58,11 +58,3 @@ class Model:
     def load(self):
         self.model=tf.keras.models.load_model("../models/classification_model.h5")
 
-if __name__ == '__main__':
-    model = Model()
-    model.load_data()
-    model.build()
-    model.train()
-    model.predict("../classification_data/car/3b59c8a5-f0b031cc.jpg 1.jpg")
-    model.save()
-    model.load()

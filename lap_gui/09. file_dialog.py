@@ -16,9 +16,9 @@ class ClassificationAI(QWidget):
 
         self.setLayout(self.main_layout)
     def button1_click(self):
-        path, _=QFileDialog.getOpenFileNames(self,'','.','All Files(*.*))')#값 2개 가져와서 1개 버림 (1,2,3,4,5) (1,창제목,경로,필터링(2개 이상이면 공백으로 구분. *.py *.cpp))
+        path, _=QFileDialog.getOpenFileName(self,'','.','All Files(*.*))')#값 2개 가져와서 1개 버림 (1,2,3,4,5) (1,창제목,경로,필터링(2개 이상이면 공백으로 구분. *.py *.cpp))
         #오류 확인용         for i in range (len(path)):
-        #오류 확인용             f = open(path[i], 'r',encoding='utf-8')ㄴ
+        #오류 확인용             f = open(path[i], 'r',encoding='utf-8')
         #오류 확인용             line = f.read()
         #오류 확인용             print(line)
 

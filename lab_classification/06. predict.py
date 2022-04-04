@@ -2,10 +2,10 @@ import tensorflow as tf
 import numpy as np
 import cv2
 
-model=tf.keras.models.load_model("../models/mymodel.h5")
+model=tf.keras.models.load_model("../models/classification_model_trained.h5")
 class_names=['bike', 'bus', 'car', 'motor', 'person', 'rider', 'traffic light', 'traffic sign', 'truck']
 
-image=cv2.imread("../classification_data/bike/c1ba5ee6-a7916d65.jpg 35.jpg")
+image=cv2.imread("../classification_data/bus/786b3729-acc83d6f.jpg 1.jpg")
 resize_image=cv2.resize(image,(224,224))
 print(resize_image.shape)#(224,224,3)
 data=np.array([resize_image])
