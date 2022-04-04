@@ -100,8 +100,7 @@ PyCharm
 #### 2022-02-14
 
 * 텐서플로우에 내장되어있는, keras 함수를 통하여, 이미 만들어진 가중치등을 적용시킴.
-* 인공신경망 합성곱계층과, 완전연결 신경망을 통하여, 데이터를 9개로 압축시킨후, 모델을 저장시킴.
-* 
+* 인공신경망 합성곱계층과, 완전연결 신경망을 통하여, 데이터를 9개로 압축시킨후, 모델을 저장시킴. (mobilenet 사용. http://melonicedlatte.com/machinelearning/2019/11/01/212800.html 참고.)
 
 #### 2022-02-16
 * 이미지를 보여주면, 그 이미지를 인식하는 코드를 짬.
@@ -110,12 +109,49 @@ PyCharm
 
 #### 2022-02-23
 * 데이터의 로그를 남긴후, 그 로그를 아나콘다를 통하여 시각화함.
+* 
 * (learning_rate=0.0005)
 * ![image](https://user-images.githubusercontent.com/98321404/155313664-fde2757f-2a29-48f6-a909-277d70f8cb09.png)
 * (learning_rate=0.01)
 * ![image](https://user-images.githubusercontent.com/98321404/155314587-c57c4e10-1016-4b9a-a918-5c1689ffc085.png)
 * (learning_rate=0.001)
 * ![image](https://user-images.githubusercontent.com/98321404/155315298-68104907-8b37-4900-b630-639b234e42d8.png)
+
+#### 2022-03-02
+* GUI 구현 실험을 함.
+* ![image](https://user-images.githubusercontent.com/98321404/159701745-c41db2f3-184c-457f-9436-d4a51970ced9.png)
+* PyQt5.QtWidgets을 이용해 구현.
+
+
+#### 2022-03-14
+* GUI 구현을 완료함.
+* 함수를 이용해, 버튼에 기능을 넣어서 실행까지 가능해짐.
+* 그 결과, 아래 사진과 같이, 퍼센트로 표기 가능해짐.
+
+
+![image](https://user-images.githubusercontent.com/98321404/160390475-e2cc07c4-8105-4959-ab50-466aaa8c38d8.png)
+
+
+#### 2022-03-28
+
+-------------------------------
+retinanet : https://yhu0409.tistory.com/2
+imagemap : https://csm-kr.tistory.com/11
+
+
+
+
+
+
+
+
+
+
+
+
+
+r
+--------------------------------
 
 가상환경 설정
 데이터 수집 (BDD100K)
@@ -130,7 +166,7 @@ conda create -n rod-env python=3.6
 conda activate rod-env
 
 pip install opencv-python==4.5.5.62
-
+---------------------------
 anaconda prompt 실행
 
 conda activate rod-env
@@ -138,5 +174,8 @@ conda activate rod-env
 pip install tensorflow==2.6.2
 
 pip install matplotlib==3.3.4
+-----------------------------
+pip install pyqt5==5.15.6
+-----------------------------
 
 
