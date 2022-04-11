@@ -68,6 +68,7 @@ class Model:
     def load(self):
         self.model=tf.keras.models.load_model("../models/savemodel.h5")
     def predict_array(self, path):
+        print(path)
         image = cv2.imread(path)
         resize_image = cv2.resize(image, (224, 224))
         data = np.array([resize_image])

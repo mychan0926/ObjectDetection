@@ -16,7 +16,9 @@ class ClassificationAI(QWidget):
         self.model = model.Model()
 
         self.modelnames=self.model.class_name()
+
         print(self.modelnames)
+
         self.setWindowTitle('이미지 분류 AI')
 
         self.button1=  QPushButton('데이터 불러오기')
@@ -85,7 +87,6 @@ class ClassificationAI(QWidget):
 
         self.text_label.setText(self.text)
     def button6_click(self):
-
         self.path, _=QFileDialog.getOpenFileName(self,'','.','All Images(*.*))')
         self.pixmap = QPixmap(str(self.path))
         self.image_label.setPixmap(self.pixmap)

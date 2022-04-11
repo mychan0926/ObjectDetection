@@ -8,7 +8,7 @@ class_names=['bike', 'bus', 'car', 'motor', 'person', 'rider', 'traffic light', 
 
 image=cv2.imread("../classification_data/"+file_name+"/"+data_name)
 resize_image=cv2.resize(image,(224,224))
-print(resize_image.shape)#(224,224,3)
+print(resize_image.shape) #(224,224,3)
 data=np.array([resize_image])
 print(data.shape) #이미지는 배열 형식으로 넣어줘야함.  (1,224,224,3)
 
